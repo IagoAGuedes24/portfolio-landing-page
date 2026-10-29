@@ -76,28 +76,32 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: 'omniagent-core',
-    title: 'OmniAgent Core',
-    tagline: 'Orquestrador de IA Agêntica para Resolução Autônoma de Tarefas',
-    category: 'Inteligência Artificial',
-    problem: 'Processos de triagem e análise multi-fonte em empresas dependem de esforço manual excessivo, causando lentidão e falhas humanas.',
-    solution: 'Sistema autônomo com agentes inteligentes que interpretam comandos de alto nível, selecionam ferramentas dinâmicas, executam validações e entregam relatórios completos.',
-    tags: ['Python', 'FastAPI', 'React', 'TypeScript', 'LangChain', 'Docker', 'Tailwind CSS'],
-    demoUrl: 'https://demo.example.com/omniagent',
-    repoUrl: 'https://github.com/IagoAGuedes24/omniagent-core',
-    featured: true
+    id: 'watermark-studio',
+    title: 'Watermark Studio',
+    tagline: 'Processamento e Aplicação de Marcas d\'Água e Logos em Lotes de Imagens',
+    category: 'Aplicação Web & Gráfica',
+    problem: 'Profissionais de fotografia e criação perdem horas aplicando marcas d\'água manualmente em lotes de milhares de fotos, sofrendo com upload demorado e privacidade exposta.',
+    solution: 'Aplicação web de alta performance com processamento 100% local (HTML5 Canvas e File System Access API), capaz de processar +2.000 fotos sem travar, com suporte a orientação EXIF e prévia em tempo real.',
+    tags: ['JavaScript', 'HTML5 Canvas', 'File System Access API', 'EXIF Parser', 'Web Performance'],
+    siteUrl: 'https://iagoaguedes24.github.io/watermark-studio/',
+    repoUrl: 'https://github.com/IagoAGuedes24/watermark-studio',
+    featured: true,
+    ideAssisted: true,
+    ideNote: 'Desenvolvido com auxílio de IDE'
   },
   {
-    id: 'nexus-enterprise-api',
-    title: 'Nexus Enterprise API & Dashboard',
-    tagline: 'Arquitetura de Microsserviços e Telemetria em Tempo Real',
-    category: 'Full-Stack & Backend',
-    problem: 'Sistemas corporativos sofrem com alto tempo de resposta em relatórios analíticos e gargalos de concorrência em horários de pico.',
-    solution: 'Endpoints de alta velocidade desenvolvidos em FastAPI e Django REST com camada de caching em Redis e painel interativo em React com streaming de métricas.',
-    tags: ['Python', 'Django', 'FastAPI', 'React', 'PostgreSQL', 'Redis', 'Docker'],
-    demoUrl: 'https://demo.example.com/nexus',
-    repoUrl: 'https://github.com/IagoAGuedes24/nexus-enterprise-api',
-    featured: true
+    id: 'portfolio-landing-page',
+    title: 'Portfólio & Hub de Engenharia e IA',
+    tagline: 'Landing Page Pessoal de Alta Performance e Design de Engenharia',
+    category: 'Frontend & UI/UX',
+    problem: 'Necessidade de uma plataforma moderna e centralizada que represente com excelência projetos de engenharia full-stack e soluções em Inteligência Artificial.',
+    solution: 'Landing page responsiva e otimizada com React 19, TypeScript e Tailwind CSS v4, suporte a dark/light mode nativo, arquitetura modular de componentes e integração direta de canais de contato.',
+    tags: ['React 19', 'TypeScript', 'Tailwind CSS v4', 'Vite', 'Clean Architecture', 'Dark Mode'],
+    siteUrl: 'https://iagoalbuquerque.vercel.app/',
+    repoUrl: 'https://github.com/IagoAGuedes24/portfolio-landing-page',
+    featured: true,
+    ideAssisted: true,
+    ideNote: 'Desenvolvido com auxílio de IDE'
   },
   {
     id: 'cloudpulse-monitor',
@@ -107,9 +111,11 @@ export const PROJECTS: Project[] = [
     problem: 'Falta de visibilidade centralizada do consumo de recursos, containers Docker e logs de microsserviços em ambientes de desenvolvimento e teste.',
     solution: 'Dashboard minimalista dark mode que coleta dados de CPU/memória, gerencia o ciclo de vida de containers e exibe logs em tempo real.',
     tags: ['TypeScript', 'React', 'Docker', 'Linux / WSL', 'Tailwind CSS', 'REST APIs'],
-    demoUrl: 'https://demo.example.com/cloudpulse',
+    siteUrl: 'https://demo.example.com/cloudpulse',
     repoUrl: 'https://github.com/IagoAGuedes24/cloudpulse-monitor',
-    featured: true
+    featured: true,
+    ideAssisted: true,
+    ideNote: 'Desenvolvido com auxílio de IDE'
   }
 ];
 

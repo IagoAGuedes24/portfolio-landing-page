@@ -6,9 +6,12 @@ export interface Project {
   problem: string;
   solution: string;
   tags: string[];
+  siteUrl?: string;
   demoUrl?: string;
   repoUrl: string;
   featured?: boolean;
+  ideAssisted?: boolean;
+  ideNote?: string;
 }
 
 export interface SkillCategory {
