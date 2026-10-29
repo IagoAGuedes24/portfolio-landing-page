@@ -19,7 +19,7 @@ export const Skills: React.FC = () => {
             <span>Tech Stack & Habilidades</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100 mb-5 leading-tight">
-            Tecnologias e Ferramentas que Domino
+            Stack Tecnológico & Ferramentas
           </h2>
           <p className="text-zinc-600 dark:text-zinc-300 text-lg leading-relaxed">
             Do design da arquitetura de backend à interface do usuário e orquestração de IA.

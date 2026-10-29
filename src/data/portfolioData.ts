@@ -52,7 +52,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: 'Backend & APIs',
     description: 'Microsserviços assíncronos, endpoints seguros e processamento concorrente.',
     iconName: 'Server',
-    skills: ['Python', 'Django', 'FastAPI', 'REST APIs', 'PostgreSQL', 'Redis', 'SQLAlchemy', 'Pydantic', 'Celery']
+    skills: ['Python', 'Django', 'FastAPI', 'REST APIs', 'PostgreSQL', 'SQLAlchemy', 'Pydantic']
   },
   {
     title: 'Frontend & Interface',
@@ -64,13 +64,13 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: 'DevOps & Ferramentas',
     description: 'Infraestrutura em containers, esteiras de entrega contínua e ambiente Linux.',
     iconName: 'Terminal',
-    skills: ['Docker', 'Git & GitHub', 'Linux / WSL', 'CI/CD Pipelines', 'Nginx', 'Bash Scripting', 'Postman']
+    skills: ['Docker', 'Git & GitHub', 'Linux / WSL', 'CI/CD Pipelines', 'Postman']
   },
   {
     title: 'IA & Engenharia Agêntica',
     description: 'Automação inteligente, raciocínio em etapas e orquestração de LLMs.',
     iconName: 'Bot',
-    skills: ['IA Agêntica', 'LangChain', 'LlamaIndex', 'Prompt Engineering', 'Integração de LLMs', 'RAG', 'Automação']
+    skills: ['IA Agêntica', 'LangChain', 'Prompt Engineering', 'Integração de LLMs', 'RAG', 'Automação']
   }
 ];
 
