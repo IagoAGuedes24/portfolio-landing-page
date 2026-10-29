@@ -8,8 +8,12 @@ export interface Project {
   tags: string[];
   siteUrl?: string;
   demoUrl?: string;
-  repoUrl: string;
+  repoUrl?: string;
+  isPrivateRepo?: boolean;
   featured?: boolean;
+  aiAssisted?: boolean;
+  aiNote?: string;
+  badgeText?: string;
   ideAssisted?: boolean;
   ideNote?: string;
 }

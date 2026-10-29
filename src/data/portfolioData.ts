@@ -86,8 +86,8 @@ export const PROJECTS: Project[] = [
     siteUrl: 'https://iagoaguedes24.github.io/watermark-studio/',
     repoUrl: 'https://github.com/IagoAGuedes24/watermark-studio',
     featured: true,
-    ideAssisted: true,
-    ideNote: 'Desenvolvido com auxílio de IDE'
+    aiAssisted: true,
+    aiNote: 'Desenvolvido com auxílio de IA'
   },
   {
     id: 'portfolio-landing-page',
@@ -100,22 +100,21 @@ export const PROJECTS: Project[] = [
     siteUrl: 'https://iagoalbuquerque.vercel.app/',
     repoUrl: 'https://github.com/IagoAGuedes24/portfolio-landing-page',
     featured: true,
-    ideAssisted: true,
-    ideNote: 'Desenvolvido com auxílio de IDE'
+    aiAssisted: true,
+    aiNote: 'Desenvolvido com auxílio de IA'
   },
   {
-    id: 'cloudpulse-monitor',
-    title: 'CloudPulse Observability Hub',
-    tagline: 'Painel Centralizado de Telemetria e Monitoramento de Containers',
-    category: 'DevOps & Observabilidade',
-    problem: 'Falta de visibilidade centralizada do consumo de recursos, containers Docker e logs de microsserviços em ambientes de desenvolvimento e teste.',
-    solution: 'Dashboard minimalista dark mode que coleta dados de CPU/memória, gerencia o ciclo de vida de containers e exibe logs em tempo real.',
-    tags: ['TypeScript', 'React', 'Docker', 'Linux / WSL', 'Tailwind CSS', 'REST APIs'],
-    siteUrl: 'https://demo.example.com/cloudpulse',
-    repoUrl: 'https://github.com/IagoAGuedes24/cloudpulse-monitor',
-    featured: true,
-    ideAssisted: true,
-    ideNote: 'Desenvolvido com auxílio de IDE'
+    id: 'ergo-ufpb',
+    title: 'ERGO — Plataforma de Produtividade & Ergonomia',
+    tagline: 'Sistema Web Institucional para Gestão de Efetividade Digital e Fatores Ergonômicos (UFPB)',
+    category: 'Full-Stack & Sistemas Web',
+    badgeText: 'Institucional / UFPB',
+    problem: 'O monitoramento contínuo de produtividade, bem-estar, carga cognitiva e condições de trabalho em organizações carece de metodologia científica e coleta estruturada para subsidiar decisões gerenciais.',
+    solution: 'Plataforma web concebida pelo Prof. Dr. Carlo Gabriel Porto Bellini (UFPB) e desenvolvida em Python e Django, hospedada na infraestrutura da STI/UFPB. Implementa o framework de Efetividade Digital com separação de papéis (Observador/Executor), monitoramento multidimensional (Ambiente, Cognição e Comportamento), conformidade com a LGPD e exportação de dados para softwares analíticos (R, SPSS, Python, Stata). Atuação como desenvolvedor na equipe técnica da UFPB.',
+    tags: ['Python', 'Django', 'PostgreSQL', 'Efetividade Digital', 'LGPD', 'STI / UFPB'],
+    siteUrl: 'https://ergo.ccsa.ufpb.br/',
+    isPrivateRepo: true,
+    featured: true
   }
 ];
 

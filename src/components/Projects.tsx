@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, AlertCircle, CheckCircle2, Sparkles } from 'lucide-react';
+import { ExternalLink, AlertCircle, CheckCircle2, Sparkles, Lock } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import { PROJECTS } from '../data/portfolioData';
 
@@ -30,10 +30,14 @@ export const Projects: React.FC = () => {
                   <span className="text-xs font-mono uppercase tracking-wider text-cyan-700 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-950/50 border border-cyan-200 dark:border-cyan-500/20 px-3 py-1 rounded-md font-semibold">
                     {project.category}
                   </span>
-                  {project.ideAssisted ? (
+                  {project.badgeText ? (
+                    <span className="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-500/25 px-2.5 py-1 rounded-md font-medium">
+                      <span>{project.badgeText}</span>
+                    </span>
+                  ) : (project.aiAssisted || project.ideAssisted) ? (
                     <span className="inline-flex items-center gap-1.5 text-xs font-mono text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-500/25 px-2.5 py-1 rounded-md font-medium">
                       <Sparkles className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
-                      <span>Auxílio de IDE</span>
+                      <span>Auxílio de IA</span>
                     </span>
                   ) : (
                     <span className="text-xs text-zinc-500 font-mono">Destaque</span>
@@ -81,11 +85,11 @@ export const Projects: React.FC = () => {
                   ))}
                 </div>
 
-                {/* IDE Assistance Footer Note */}
-                {project.ideAssisted && (
+                {/* AI Assistance Footer Note */}
+                {(project.aiAssisted || project.ideAssisted) && (
                   <div className="flex items-center gap-2 pt-3.5 mt-5 border-t border-zinc-100 dark:border-zinc-800/60 text-xs text-zinc-500 dark:text-zinc-400 font-mono">
                     <Sparkles className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" />
-                    <span>{project.ideNote || 'Desenvolvido com auxílio de IDE'}</span>
+                    <span>{project.aiNote || project.ideNote || 'Desenvolvido com auxílio de IA'}</span>
                   </div>
                 )}
               </div>
@@ -103,15 +107,25 @@ export const Projects: React.FC = () => {
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 )}
-                <a
-                  href={project.repoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 shadow-sm transition-colors"
-                >
-                  <GithubIcon className="w-4 h-4" />
-                  <span>Repositório</span>
-                </a>
+                {project.isPrivateRepo || !project.repoUrl ? (
+                  <div
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium bg-zinc-100 dark:bg-zinc-900/60 text-zinc-400 dark:text-zinc-500 border border-zinc-200 dark:border-zinc-800/80 cursor-not-allowed select-none"
+                    title="Repositório privado institucional"
+                  >
+                    <Lock className="w-4 h-4 text-zinc-400 dark:text-zinc-500" />
+                    <span>Repositório Privado</span>
+                  </div>
+                ) : (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 shadow-sm transition-colors"
+                  >
+                    <GithubIcon className="w-4 h-4" />
+                    <span>Repositório</span>
+                  </a>
+                )}
               </div>
             </div>
           ))}
